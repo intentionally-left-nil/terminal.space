@@ -10,11 +10,13 @@ const TwoColumns = styled.div`
 const LeftColumn = styled.div`
   order: 1;
   width: 50%;
+  padding-right:10px;
 `;
 
 const RightColumn = styled.div`
   order: 2;
   width: 50%;
+  padding-left:10px;
 `;
 
 export { LeftColumn, RightColumn };
