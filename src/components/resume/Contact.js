@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Header from './Header';
-import Section from './Section';
 import emailLogo from '../../images/email.png';
 import phoneLogo from '../../images/phone.png';
 import githubLogo from '../../images/github.png';
@@ -37,12 +36,12 @@ ContactRow.propTypes = {
 };
 
 const Contact = ({ email, phone, github }) => (
-  <Section>
+  <div>
     <Header align="right">Contact</Header>
     <ContactRow text={email} logo={emailLogo} type="email" />
     <ContactRow text={phone} logo={phoneLogo} type="phone" />
     <ContactRow text={github} logo={githubLogo} type="github" />
-  </Section>
+  </div>
 );
 
 Contact.propTypes = {

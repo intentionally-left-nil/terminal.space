@@ -1,6 +1,7 @@
 import React from 'react';
-import Hero from './components/resume/Hero';
-import Contact from './components/resume/Contact';
+import TwoColumns, { LeftColumn, RightColumn } from './TwoColumns';
+import Hero from './Hero';
+import Contact from './Contact';
 
 const createHero = () => (
   <Hero rows={
@@ -30,10 +31,15 @@ const createHero = () => (
 );
 
 const Resume = () => (
-  <div>
-    {createHero()}
-    <Contact email="anil@terminal.space" phone="425-748-4484" github="AnilRedshift" />
-  </div>
+  <TwoColumns>
+    <LeftColumn>
+      {createHero()}
+      <Contact email="anil@terminal.space" phone="425-748-4484" github="AnilRedshift" />
+    </LeftColumn>
+    <RightColumn>
+      STUFF GOES HERE
+    </RightColumn>
+  </TwoColumns>
 );
 
 export default Resume;
