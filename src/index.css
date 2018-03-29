@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url(./fonts/GlacialIndifference-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'GlacialIndifference';
+  font-weight: bold;
+  src: url(./fonts/GlacialIndifference-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'GlacialIndifference';
+  font-style: italic;
+  src: url(./fonts/GlacialIndifference-Italic.woff) format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: GlacialIndifference;
 }
