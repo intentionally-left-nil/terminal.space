@@ -2,6 +2,7 @@ import React from 'react';
 import TwoColumns, { LeftColumn, RightColumn } from './TwoColumns';
 import Communities from './Communities';
 import Contact from './Contact';
+import Education from './Education';
 import Hero from './Hero';
 import Jobs from './Jobs';
 import Skills from './Skills';
@@ -20,6 +21,12 @@ const Resume = () => (
       <Skills skills={skillsData} />
       <Jobs jobs={jobData} />
       <Communities communities={communitiesData} />
+      <Education
+        name="University of Illinois"
+        degree="Bachelor of Science in Computer Science"
+        start="2007"
+        end="2010"
+      />
     </RightColumn>
   </TwoColumns>
 );
