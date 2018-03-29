@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'GlacialIndifference';
+  font-style: normal;
   src: url(./fonts/GlacialIndifference-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: 'GlacialIndifference';
+  font-style: normal;
   font-weight: bold;
   src: url(./fonts/GlacialIndifference-Bold.woff) format("woff");
 }
@@ -13,6 +15,13 @@
   font-family: 'GlacialIndifference';
   font-style: italic;
   src: url(./fonts/GlacialIndifference-Italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('./fonts/leaguespartan-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
