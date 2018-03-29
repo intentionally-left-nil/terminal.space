@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Header from './Header';
 import Section from './Section';
+import emailLogo from '../../images/email.png';
+import phoneLogo from '../../images/phone.png';
+import githubLogo from '../../images/github.png';
 
 const Text = styled.div`
   padding-right: 2px;
@@ -10,26 +13,35 @@ const Text = styled.div`
 `;
 
 const Row = styled.div`
-  margin-left: auto;
-  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 7px;
 `;
 
-const ContactRow = ({ text, logo }) => (
+const Icon = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+
+const ContactRow = ({ text, logo, type }) => (
   <Row>
     <Text>{text}</Text>
+    <Icon src={logo} alt={`${type} logo`} />
   </Row>
 );
 ContactRow.propTypes = {
   text: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 const Contact = ({ email, phone, github }) => (
   <Section>
     <Header align="right">Contact</Header>
-    <ContactRow text={email} />
-    <ContactRow text={phone} />
-    <ContactRow text={github} />
+    <ContactRow text={email} logo={emailLogo} type="email" />
+    <ContactRow text={phone} logo={phoneLogo} type="phone" />
+    <ContactRow text={github} logo={githubLogo} type="github" />
   </Section>
 );
 
