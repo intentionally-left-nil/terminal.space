@@ -1,7 +1,8 @@
 import React from 'react';
 import TwoColumns, { LeftColumn, RightColumn } from './TwoColumns';
-import Hero from './Hero';
 import Contact from './Contact';
+import Hero from './Hero';
+import Skills from './Skills';
 
 const createHero = () => (
   <Hero rows={
@@ -37,7 +38,12 @@ const Resume = () => (
       <Contact email="anil@terminal.space" phone="425-748-4484" github="AnilRedshift" />
     </LeftColumn>
     <RightColumn>
-      STUFF GOES HERE
+      <Skills
+        skills={[
+          ['Elixir', 'JS', 'C', 'C++', 'Python', 'Ruby'],
+          ['Empathy', 'Teaching', 'Patience'],
+        ]}
+      />
     </RightColumn>
   </TwoColumns>
 );
