@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@anilredshift/react-bash@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@anilredshift/react-bash/-/react-bash-1.6.1.tgz#8c64a1b92ace89f5dae54d0d00ad954e3080b212"
+"@anilredshift/react-bash@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@anilredshift/react-bash/-/react-bash-1.6.2.tgz#c9ce036ac8e5d6eff13f7c94e9191056bd00ad28"
 
 "@storybook/addon-actions@^3.3.15":
   version "3.3.15"
