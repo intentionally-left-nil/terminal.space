@@ -6,6 +6,7 @@ const Container = styled.div`
   font-family: "League Spartan";
   font-size: 56px;
   font-weight: 400;
+  line-height: 1.6;
 `;
 
 const colors = [
