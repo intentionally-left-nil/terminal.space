@@ -25,9 +25,10 @@ class App extends Component {
             header: {
               display: 'none',
             },
-            ReactBash: {
+            body: {
               height: '100vh',
-              backgroundColor: 'black',
+              color: '#FFF',
+              backgroundColor: '#000',
             },
           }}
           theme="dark"
