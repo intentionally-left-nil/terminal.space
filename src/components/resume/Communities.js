@@ -18,7 +18,7 @@ const List = styled.ul`
 
 const createRows = communities => (
   communities.map(({ name, role }) => (
-    <Row>
+    <Row key={name + role}>
       <Name>{name}</Name> - {role}
     </Row>
   ))
