@@ -1,0 +1,35 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest-browsers
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/frontend
+
+    steps:
+      - checkout
+      - run: yarn
+      - run: sudo apt-get update && sudo apt-get install -y python3 python3-pip
+      - run: echo 'export PATH=$PATH:$HOME/.local/bin' >> $BASH_ENV
+      - run: pip3 install --upgrade --user awscli
+      - run: yarn test
+      - run: yarn build
+      - deploy:
+          name: Deploy to S3 if tests pass and branch is Master
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              aws s3 sync build s3://terminal.space --delete
+              aws configure set preview.cloudfront true
+              aws cloudfront create-invalidation --distribution-id E11NQ9C3CBLZK6 --paths '/*'
+
+            else
+              echo "Not master branch so not deploying"
+            fi
