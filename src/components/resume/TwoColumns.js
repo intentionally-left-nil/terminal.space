@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const TwoColumns = styled.div`
@@ -6,17 +8,58 @@ const TwoColumns = styled.div`
   margin: 20px;
 `;
 
-const LeftColumn = styled.div`
+const gap = 40;
+const width = `calc(50% - ${gap}px)`;
+
+const LeftColumnStyled = styled.div`
   order: 1;
-  width: 50%;
-  padding-right:10px;
+  width: ${width};
+  padding-right: ${gap}px;
+  display: flex;
+  justify-content: flex-end;
 `;
 
-const RightColumn = styled.div`
+const RightColumnStyled = styled.div`
   order: 2;
-  width: 50%;
-  padding-left:10px;
+  width: ${width};
+  padding-left: ${gap}px;
+  display: flex;
+  justify-content: flex-start;
 `;
+
+const ColumnContent = styled.div`
+  max-width: 332px;
+`;
+
+const LeftColumn = props => (
+  <LeftColumnStyled>
+    <ColumnContent>
+      {props.children}
+    </ColumnContent>
+  </LeftColumnStyled>
+);
+
+LeftColumn.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
+
+const RightColumn = props => (
+  <RightColumnStyled>
+    <ColumnContent>
+      {props.children}
+    </ColumnContent>
+  </RightColumnStyled>
+);
+
+RightColumn.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
 
 export { LeftColumn, RightColumn };
 
