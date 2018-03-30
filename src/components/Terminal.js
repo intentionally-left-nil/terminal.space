@@ -3,8 +3,8 @@ import ReactTerminal from '@anilredshift/react-bash';
 import resumeData from './resume/resumeData';
 import resumeMarkdown from './resume/resumeMarkdown';
 
-const createUrlHandler = url => ((state) => {
-  window.open(url, '_blank');
+const createUrlHandler = (url, target='_blank') => ((state) => {
+  window.open(url, target);
   return Object.assign({}, state, {
     history: state.history.concat([{ value: `Launching ${url}` }]),
   });
@@ -12,13 +12,14 @@ const createUrlHandler = url => ((state) => {
 
 const history = [
   { cwd: '/', value: 'ls' },
-  { value: 'contact projects Resume.md' },
+  { value: 'contact projects resume Resume.md' },
 ];
 
 const mailto = `mailto:${encodeURIComponent(resumeData.contact.email)}?subject=${encodeURIComponent('Contact request from homepage')}`;
 
 const structure = {
   contact: { exec: createUrlHandler(mailto) },
+  resume: { exec: createUrlHandler('/resume', '_self') },
   'Resume.md': { content: resumeMarkdown },
   projects: {
     cogrammers: { exec: createUrlHandler('https://cogrammers.community') },
