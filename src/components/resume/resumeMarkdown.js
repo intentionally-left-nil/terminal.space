@@ -10,7 +10,9 @@ const printJobs = jobs =>
   jobs.map(({ company, role, start, end = 'Present', highlights }) =>
     `**${role}, ${company}**
     ${start} - ${end}
-    ${highlights.map(highlight => `- ${highlight}`).join('\n')}`,
+    ${highlights.map(highlight => `- ${highlight}`).join('\n')}
+
+    `,
   ).join('\n');
 
 const printCommunities = communities =>
@@ -35,7 +37,7 @@ ${printJobs(resumeData.jobs)}
 ${printCommunities(resumeData.communities)}
 
 ## Education
-${resumeData.education.name} ${resumeData.education.start} - ${resumeData.education.end}
+**${resumeData.education.name}** ${resumeData.education.start} - ${resumeData.education.end}
 
 ${resumeData.education.degree}`;
 
