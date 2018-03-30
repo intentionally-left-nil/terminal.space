@@ -1,5 +1,6 @@
 const resumeData = {
   intro: "Hello there, I'm Anil Kulkarni, and I'm a software engineer, EMT, teacher, and leader",
+  name: 'Anil Kulkarni',
   introHero: [
     [
       'hello',

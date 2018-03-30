@@ -6,7 +6,7 @@ import Education from './Education';
 import Hero from './Hero';
 import Jobs from './Jobs';
 import Skills from './Skills';
-import resumeData from './data/resumeData';
+import resumeData from './resumeData';
 
 const Resume = () => (
   <TwoColumns>
