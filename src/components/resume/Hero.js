@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   font-family: "League Spartan";
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 400;
 `;
 

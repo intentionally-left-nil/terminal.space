@@ -11,6 +11,8 @@ import resumeData from './resumeData';
 
 const Container = styled.div`
   background-color: #FFF;
+  overflow-y: auto;
+  height: 100vh;
 `;
 
 const Resume = () => (

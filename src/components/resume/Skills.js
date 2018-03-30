@@ -1,15 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import Header from './Header';
-
-const Row = styled.li`
-  display: list-item;
-`;
-
-const List = styled.ul`
-  padding-left: 1.3em;
-`;
+import List from './List';
+import Row from './Row';
 
 const createRows = skills => (
   skills.map(row => <Row key={row.join('')}>{row.join(' | ').trim()}</Row>)
