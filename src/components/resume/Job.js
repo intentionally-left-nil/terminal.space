@@ -1,17 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import List from './List';
+import Row from './Row';
 
 const Title = styled.div`
   font-weight: bold;
-`;
-
-const List = styled.ul`
-  padding-left: 1.3em;
-`;
-
-const Row = styled.li`
-  display: list-item;
 `;
 
 const createRows = highlights => (

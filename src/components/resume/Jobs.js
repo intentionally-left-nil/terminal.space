@@ -11,7 +11,7 @@ const Jobs = ({ jobs }) => (
 );
 
 Jobs.propTypes = {
-  jobs: PropTypes.arrayOf(Job.propTypes).isRequired,
+  jobs: PropTypes.arrayOf(PropTypes.shape(Job.propTypes)).isRequired,
 };
 
 export default Jobs;
