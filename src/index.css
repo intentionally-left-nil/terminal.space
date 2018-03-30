@@ -29,3 +29,7 @@ body {
   padding: 0;
   font-family: GlacialIndifference;
 }
+
+input:focus{
+    outline: none;
+}
