@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Terminal from 'react-bash';
+import Terminal from '@anilredshift/react-bash';
 import Resume from './components/resume/Resume';
 import resumeMarkdown from './components/resume/resumeMarkdown';
 
