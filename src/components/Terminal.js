@@ -33,7 +33,7 @@ const structure = {
 const Terminal = () => (
   <div>
     <ReactTerminal
-      prefix="terminal.space"
+      prefix="guest@terminal.space"
       history={history}
       structure={structure}
       styles={{
