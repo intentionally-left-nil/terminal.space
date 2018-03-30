@@ -6,27 +6,19 @@ import Education from './Education';
 import Hero from './Hero';
 import Jobs from './Jobs';
 import Skills from './Skills';
-import communitiesData from './data/communitiesData';
-import heroData from './data/heroData';
-import jobData from './data/jobData';
-import skillsData from './data/skillsData';
+import resumeData from './data/resumeData';
 
 const Resume = () => (
   <TwoColumns>
     <LeftColumn>
-      <Hero rows={heroData} />
-      <Contact email="anil@terminal.space" phone="425-748-4484" github="AnilRedshift" />
+      <Hero rows={resumeData.introHero} />
+      <Contact {...resumeData.contact} />
     </LeftColumn>
     <RightColumn>
-      <Skills skills={skillsData} />
-      <Jobs jobs={jobData} />
-      <Communities communities={communitiesData} />
-      <Education
-        name="University of Illinois"
-        degree="Bachelor of Science in Computer Science"
-        start="2007"
-        end="2010"
-      />
+      <Skills skills={resumeData.skills} />
+      <Jobs jobs={resumeData.jobs} />
+      <Communities communities={resumeData.communities} />
+      <Education {...resumeData.education} />
     </RightColumn>
   </TwoColumns>
 );
