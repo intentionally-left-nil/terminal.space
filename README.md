@@ -1,4 +1,4 @@
-# Terminal.Space
+# terminal.space
 
 This is the code behind https://terminal.space
 It is built off the [create-react-app](https://github.com/facebook/create-react-app) skeleton.
