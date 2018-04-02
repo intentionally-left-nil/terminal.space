@@ -6,6 +6,10 @@ import emailLogo from '../../images/email.png';
 import phoneLogo from '../../images/phone.png';
 import githubLogo from '../../images/github.png';
 
+const Container = styled.div`
+  margin-bottom: 20px;
+`;
+
 const Text = styled.div`
   padding-right: 2px;
   text-align: right;
@@ -37,12 +41,12 @@ ContactRow.propTypes = {
 };
 
 const Contact = ({ email, phone, github }) => (
-  <div>
+  <Container>
     <Header align="right">Contact</Header>
     <ContactRow text={email} logo={emailLogo} type="email" />
     <ContactRow text={phone} logo={phoneLogo} type="phone" />
     <ContactRow text={github} logo={githubLogo} type="github" />
-  </div>
+  </Container>
 );
 
 Contact.propTypes = {

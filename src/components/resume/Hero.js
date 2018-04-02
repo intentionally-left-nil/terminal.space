@@ -7,6 +7,7 @@ const Container = styled.div`
   font-size: 56px;
   font-weight: 400;
   line-height: 1.6;
+  margin-bottom: 20px;
 `;
 
 const colors = [

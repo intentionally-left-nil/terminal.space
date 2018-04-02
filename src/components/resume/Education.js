@@ -8,14 +8,23 @@ const Name = styled.span`
   font-weight: bold;
 `;
 
+const Body = styled.div`
+  text-align: right;
+`;
+
+const Wrapper = styled.div`
+  margin-top:30px;
+`;
+
 const Education = ({ name, degree, start, end }) => (
-  <div>
-    <Header>Education</Header>
-    <div>
-      <Name>{name}</Name> {start} - {end}
-    </div>
-    {degree}
-  </div>
+  <Wrapper>
+    <Header align="right">Education</Header>
+    <Body>
+      <Name>{name}</Name>
+      <div>{start} - {end}</div>
+      <div>{degree}</div>
+    </Body>
+  </Wrapper>
 );
 
 Education.propTypes = {
