@@ -21,12 +21,12 @@ const Resume = () => (
       <LeftColumn>
         <Hero rows={resumeData.introHero} />
         <Contact {...resumeData.contact} />
+        <Education {...resumeData.education} />
       </LeftColumn>
       <RightColumn>
         <Skills skills={resumeData.skills} />
         <Jobs jobs={resumeData.jobs} />
         <Communities communities={resumeData.communities} />
-        <Education {...resumeData.education} />
       </RightColumn>
     </TwoColumns>
   </Container>

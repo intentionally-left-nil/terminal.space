@@ -54,9 +54,10 @@ const resumeData = {
       role: 'Senior Software Engineer',
       start: 'November, 2017',
       highlights: [
+        'Technical lead and management track for Attorney Journey team',
+        'Daily pairing and mentoring',
         'Created new sitewide auth service using JWT',
-        'Revamped onboarding documentation',
-        'Made a Slack bot to translate acronyms',
+        'Revamped onboarding documentation for engineering',
       ],
     },
     {
@@ -66,8 +67,10 @@ const resumeData = {
       end: 'November 2017',
       highlights: [
         'Taught fundamentals, product planning, and self-learning skills to budding developers',
-        'Built new JS curriculum and lesson plans',
-        'Resolved org structure problems and cross-campus infighting through open discussions',
+        'Created daily lessons and individualized support plans',
+        'Mediated dozens of student conflicts',
+        'Built modern JS curriculum for all campuses',
+        'Resolved org structure problems and cross-campus infighting through open dialog',
       ],
     },
     {
@@ -76,9 +79,11 @@ const resumeData = {
       start: 'October 2014',
       end: 'February 2017',
       highlights: [
-        'Technical lead for five-month project to create best-in-class text editor',
+        'Technical lead and owner of all architecture decisions',
+        "Implemented Textio's initial backend",
+        'Designed and led five-month project to create best-in-class text editor',
         'Spearheaded major technology decisions such as using ES2015, Docker, AWS, and CircleCI',
-        'Mentored four junior developers, leading to two promotions',
+        'Mentored four developers, leading to two promotions',
       ],
     },
     {
