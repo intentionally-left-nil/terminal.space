@@ -25,6 +25,7 @@ const structure = {
     cogrammers: { exec: createUrlHandler('https://cogrammers.community') },
     'cogrammers-github': { exec: createUrlHandler('https://github.com/cogrammers/') },
     'evil-webserver': { exec: createUrlHandler('https://github.com/AnilRedshift/evil-webserver') },
+    'linkedINonymous': { exec: createUrlHandler('https://github.com/AnilRedshift/linkedINonymous') },
     'terminal.space': { exec: createUrlHandler('https://github.com/AnilRedshift/terminal.space') },
     yatlab: { exec: createUrlHandler('https://github.com/anilredshift/yatlab#yatlab') },
   },
