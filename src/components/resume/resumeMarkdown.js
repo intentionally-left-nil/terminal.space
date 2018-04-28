@@ -7,13 +7,14 @@ const printSkills = (skills) => {
 };
 
 const printJobs = jobs =>
-  jobs.map(({ company, role, start, end = 'Present', highlights }) =>
+  jobs.map(({
+    company, role, start, end = 'Present', highlights,
+  }) =>
     `**${role}, ${company}**
     ${start} - ${end}
     ${highlights.map(highlight => `- ${highlight}`).join('\n')}
 
-    `,
-  ).join('\n');
+    `).join('\n');
 
 const printCommunities = communities =>
   communities.map(({ name, role }) => (`**${name}** - ${role}`)).join('\n');

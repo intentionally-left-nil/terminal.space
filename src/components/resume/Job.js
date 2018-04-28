@@ -12,7 +12,9 @@ const createRows = highlights => (
   highlights.map(text => <Row key={text}>{text}</Row>)
 );
 
-const Job = ({ company, role, start, end, highlights }) => (
+const Job = ({
+  company, role, start, end, highlights,
+}) => (
   <div>
     <Title>{`${company}, ${role}`}</Title>
     <div>{`${start} - ${end}`}</div>
