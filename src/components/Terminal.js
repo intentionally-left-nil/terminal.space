@@ -3,7 +3,7 @@ import ReactTerminal from '@anilredshift/react-bash';
 import resumeData from './resume/resumeData';
 import resumeMarkdown from './resume/resumeMarkdown';
 
-const createUrlHandler = (url, target='_blank') => ((state) => {
+const createUrlHandler = (url, target = '_blank') => ((state) => {
   window.open(url, target);
   return Object.assign({}, state, {
     history: state.history.concat([{ value: `Launching ${url}` }]),
@@ -25,7 +25,7 @@ const structure = {
     cogrammers: { exec: createUrlHandler('https://cogrammers.community') },
     'cogrammers-github': { exec: createUrlHandler('https://github.com/cogrammers/') },
     'evil-webserver': { exec: createUrlHandler('https://github.com/AnilRedshift/evil-webserver') },
-    'linkedINonymous': { exec: createUrlHandler('https://github.com/AnilRedshift/linkedINonymous') },
+    linkedINonymous: { exec: createUrlHandler('https://github.com/AnilRedshift/linkedINonymous') },
     'terminal.space': { exec: createUrlHandler('https://github.com/AnilRedshift/terminal.space') },
     yatlab: { exec: createUrlHandler('https://github.com/anilredshift/yatlab#yatlab') },
   },

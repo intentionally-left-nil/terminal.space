@@ -16,6 +16,7 @@
     "build": "react-scripts build",
     "build:sitemap": "node ./sitemap-builder.js",
     "build:storybook": "build-storybook -s public",
+    "eslint": "eslint ./src",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public"

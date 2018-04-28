@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   margin-top:30px;
 `;
 
-const Education = ({ name, degree, start, end }) => (
+const Education = ({ name, degree }) => (
   <Wrapper>
     <Header align="right">Education</Header>
     <Body>
@@ -29,8 +29,6 @@ const Education = ({ name, degree, start, end }) => (
 Education.propTypes = {
   name: PropTypes.string.isRequired,
   degree: PropTypes.string.isRequired,
-  start: PropTypes.string.isRequired,
-  end: PropTypes.string.isRequired,
 };
 
 export default Education;
