@@ -5,11 +5,11 @@
   "dependencies": {
     "@anilredshift/react-bash": "^1.6.3",
     "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
-    "styled-components": "^3.2.3"
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,14 +21,14 @@
     "storybook": "start-storybook -p 9009 -s public"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.3.15",
-    "@storybook/addon-links": "^3.3.15",
-    "@storybook/addons": "^3.3.15",
-    "@storybook/react": "^3.3.15",
-    "babel-core": "^6.26.0",
+    "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-links": "^3.4.3",
+    "@storybook/addons": "^3.4.3",
+    "@storybook/react": "^3.4.3",
+    "babel-core": "^6.26.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "sitemap": "^1.13.0"

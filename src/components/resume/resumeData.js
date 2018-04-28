@@ -9,19 +9,10 @@ const resumeData = {
       'kulkarni',
       "and i'm a",
     ],
-    [
-      'software',
-      'engineer',
-    ],
-    [
-      'EMT',
-    ],
-    [
-      'teacher',
-    ],
-    [
-      'leader',
-    ],
+    ['leader'],
+    ['teacher'],
+    ['software', 'engineer'],
+    ['EMT'],
   ],
   contact: {
     email: 'anil@terminal.space',
@@ -51,13 +42,12 @@ const resumeData = {
   jobs: [
     {
       company: 'Avvo',
-      role: 'Senior Software Engineer',
+      role: 'Technical Lead',
       start: 'November, 2017',
       highlights: [
-        'Technical lead and management track for Attorney Journey team',
-        'Daily pairing and mentoring',
-        'Created new sitewide auth service using JWT',
-        'Revamped onboarding documentation for engineering',
+        'Chosen as leader to create two new services',
+        'Designed new sitewide authentication using JWT and trained dev team on best practices',
+        'Guided three cross-functional teams to achievements in site performance, onboarding, and frontend architecture',
       ],
     },
     {
@@ -67,22 +57,21 @@ const resumeData = {
       end: 'November 2017',
       highlights: [
         'Taught fundamentals, product planning, and self-learning skills to budding developers',
+        'Served on global leadership team for teachers',
         'Created daily lessons and individualized support plans',
-        'Mediated dozens of student conflicts',
         'Built modern JS curriculum for all campuses',
-        'Resolved org structure problems and cross-campus infighting through open dialog',
       ],
     },
     {
       company: 'Textio',
-      role: 'Senior Software Engineer',
+      role: 'Founding Engineer',
       start: 'October 2014',
       end: 'February 2017',
       highlights: [
         'Technical lead and owner of architecture decisions',
-        "Implemented Textio's initial backend",
+        "Implemented Textio's initial backend and refactored frontend to use React",
         'Designed and led five-month project to create best-in-class text editor',
-        'Spearheaded major technology decisions such as using ES2015, Docker, AWS, and CircleCI',
+        'Spearheaded major technology decisions, such as using ES2015, Docker, AWS, and CircleCI',
         'Mentored four developers, leading to two promotions',
       ],
     },

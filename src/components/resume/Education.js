@@ -21,7 +21,6 @@ const Education = ({ name, degree, start, end }) => (
     <Header align="right">Education</Header>
     <Body>
       <Name>{name}</Name>
-      <div>{start} - {end}</div>
       <div>{degree}</div>
     </Body>
   </Wrapper>
