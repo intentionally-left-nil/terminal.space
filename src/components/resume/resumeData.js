@@ -42,11 +42,11 @@ const resumeData = {
   jobs: [
     {
       company: 'Avvo',
-      role: 'Technical Lead',
+      role: 'Team Lead',
       start: 'November, 2017',
       highlights: [
-        'Chosen as leader to create two new services',
-        'Designed new sitewide authentication using JWT and trained dev team on best practices',
+        "Work prioritization, sprint executions, 1:1's and cross-team collaboration",
+        'Increased sprint ticket completion by 30%',
         'Guided three cross-functional teams to achievements in site performance, onboarding, and frontend architecture',
       ],
     },

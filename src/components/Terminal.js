@@ -27,7 +27,8 @@ const structure = {
     'evil-webserver': { exec: createUrlHandler('https://github.com/AnilRedshift/evil-webserver') },
     linkedINonymous: { exec: createUrlHandler('https://github.com/AnilRedshift/linkedINonymous') },
     'terminal.space': { exec: createUrlHandler('https://github.com/AnilRedshift/terminal.space') },
-    yatlab: { exec: createUrlHandler('https://github.com/anilredshift/yatlab#yatlab') },
+    yatlab: { exec: createUrlHandler('https://github.com/AnilRedshift/yatlab#yatlab') },
+    wand: { exec: createUrlHandler('https://github.com/AnilRedshift/wand') },
   },
 };
 
