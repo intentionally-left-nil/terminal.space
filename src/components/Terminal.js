@@ -20,7 +20,6 @@ const structure = {
   resume: { exec: createUrlHandler('/resume', '_self') },
   'Resume.md': { content: resumeMarkdown },
   projects: {
-    cogrammers: { exec: createUrlHandler('https://cogrammers.community') },
     'cogrammers-github': { exec: createUrlHandler('https://github.com/cogrammers/') },
     'evil-webserver': { exec: createUrlHandler('https://github.com/AnilRedshift/evil-webserver') },
     linkedINonymous: { exec: createUrlHandler('https://github.com/AnilRedshift/linkedINonymous') },
