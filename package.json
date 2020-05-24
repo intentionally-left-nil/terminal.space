@@ -6,6 +6,7 @@
     "@anilredshift/react-bash": "^1.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0"
@@ -14,23 +15,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:sitemap": "node ./sitemap-builder.js",
-    "build:storybook": "build-storybook -s public",
     "eslint": "eslint ./src",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/react": "^5.3.18",
     "babel-core": "^6.26.3",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "sitemap": "^6.1.4"
   },
   "browserslist": {
