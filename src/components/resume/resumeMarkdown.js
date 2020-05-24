@@ -1,23 +1,20 @@
 import resumeData from './resumeData';
 
 const printSkills = (skills) => {
-  const strings = skills.map(skillRow => skillRow.join(' | ').trim())
-    .map(skillset => `- ${skillset}`);
+  const strings = skills.map((skillRow) => skillRow.join(' | ').trim())
+    .map((skillset) => `- ${skillset}`);
   return strings.join('\n');
 };
 
-const printJobs = jobs =>
-  jobs.map(({
-    company, role, start, end = 'Present', highlights,
-  }) =>
-    `**${role}, ${company}**
+const printJobs = (jobs) => jobs.map(({
+  company, role, start, end = 'Present', highlights,
+}) => `**${role}, ${company}**
     ${start} - ${end}
-    ${highlights.map(highlight => `- ${highlight}`).join('\n')}
+    ${highlights.map((highlight) => `- ${highlight}`).join('\n')}
 
     `).join('\n');
 
-const printCommunities = communities =>
-  communities.map(({ name, role }) => (`**${name}** - ${role}`)).join('\n');
+const printCommunities = (communities) => communities.map(({ name, role }) => (`**${name}** - ${role}`)).join('\n');
 
 const markdown = `\
 # ${resumeData.name}

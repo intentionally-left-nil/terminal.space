@@ -5,9 +5,7 @@ import resumeMarkdown from './resume/resumeMarkdown';
 
 const createUrlHandler = (url, target = '_blank') => ((state) => {
   window.open(url, target);
-  return Object.assign({}, state, {
-    history: state.history.concat([{ value: `Launching ${url}` }]),
-  });
+  return { ...state, history: state.history.concat([{ value: `Launching ${url}` }]) };
 });
 
 const history = [

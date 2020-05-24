@@ -3,8 +3,7 @@ import Header from './Header';
 import List from './List';
 import Row from './Row';
 
-const createRows = (skills) =>
-  skills.map((row) => <Row key={row.join('')}>{row.join(' | ').trim()}</Row>);
+const createRows = (skills) => skills.map((row) => <Row key={row.join('')}>{row.join(' | ').trim()}</Row>);
 
 const Skills = ({ skills }) => (
   <div>

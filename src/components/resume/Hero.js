@@ -12,7 +12,7 @@ const Container = styled.div`
 const colors = ['#61BCF4', '#FF7370', '#FF97C7', '#C598F5', '#6F79F6'];
 
 const Row = styled.div`
-  color: ${props => props.color};
+  color: ${(props) => props.color};
   text-align: right;
   letter-spacing: -0.06em;
 `;
@@ -20,7 +20,7 @@ const Row = styled.div`
 const createRows = (data) => {
   const allRows = data.reduce((output, rows, i) => {
     const color = colors[i];
-    return output.concat(rows.map(row => ({ text: row, color })));
+    return output.concat(rows.map((row) => ({ text: row, color })));
   }, []);
   return allRows.map(({ text, color }) => (
     <Row key={text + color} color={color}>

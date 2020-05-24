@@ -9,12 +9,14 @@ const Name = styled.span`
   font-weight: bold;
 `;
 
-const createRows = (communities) =>
-  communities.map(({ name, role }) => (
-    <Row key={name + role}>
-      <Name>{name}</Name> - {role}
-    </Row>
-  ));
+const createRows = (communities) => communities.map(({ name, role }) => (
+  <Row key={name + role}>
+    <Name>{name}</Name>
+    {' '}
+    -
+    {role}
+  </Row>
+));
 
 const Communities = ({ communities }) => (
   <div>

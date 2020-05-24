@@ -30,15 +30,15 @@ const ColumnContent = styled.div`
   max-width: 332px;
 `;
 
-const LeftColumn = (props) => (
+const LeftColumn = ({ children }) => (
   <LeftColumnStyled>
-    <ColumnContent>{props.children}</ColumnContent>
+    <ColumnContent>{children}</ColumnContent>
   </LeftColumnStyled>
 );
 
-const RightColumn = (props) => (
+const RightColumn = ({ children }) => (
   <RightColumnStyled>
-    <ColumnContent>{props.children}</ColumnContent>
+    <ColumnContent>{children}</ColumnContent>
   </RightColumnStyled>
 );
 
