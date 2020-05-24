@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Header from './Header';
 
@@ -13,7 +12,7 @@ const Body = styled.div`
 `;
 
 const Wrapper = styled.div`
-  margin-top:30px;
+  margin-top: 30px;
 `;
 
 const Education = ({ name, degree }) => (
@@ -25,10 +24,5 @@ const Education = ({ name, degree }) => (
     </Body>
   </Wrapper>
 );
-
-Education.propTypes = {
-  name: PropTypes.string.isRequired,
-  degree: PropTypes.string.isRequired,
-};
 
 export default Education;

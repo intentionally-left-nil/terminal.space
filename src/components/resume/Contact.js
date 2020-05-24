@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Header from './Header';
 import emailLogo from '../../images/email.png';
@@ -34,11 +33,6 @@ const ContactRow = ({ text, logo, type }) => (
     <Icon src={logo} alt={`${type} logo`} />
   </Row>
 );
-ContactRow.propTypes = {
-  text: PropTypes.string.isRequired,
-  logo: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-};
 
 const Contact = ({ email, phone, github }) => (
   <Container>
@@ -48,11 +42,5 @@ const Contact = ({ email, phone, github }) => (
     <ContactRow text={github} logo={githubLogo} type="github" />
   </Container>
 );
-
-Contact.propTypes = {
-  email: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired,
-};
 
 export default Contact;

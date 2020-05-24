@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const TwoColumns = styled.div`
@@ -31,35 +30,17 @@ const ColumnContent = styled.div`
   max-width: 332px;
 `;
 
-const LeftColumn = props => (
+const LeftColumn = (props) => (
   <LeftColumnStyled>
-    <ColumnContent>
-      {props.children}
-    </ColumnContent>
+    <ColumnContent>{props.children}</ColumnContent>
   </LeftColumnStyled>
 );
 
-LeftColumn.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
-
-const RightColumn = props => (
+const RightColumn = (props) => (
   <RightColumnStyled>
-    <ColumnContent>
-      {props.children}
-    </ColumnContent>
+    <ColumnContent>{props.children}</ColumnContent>
   </RightColumnStyled>
 );
-
-RightColumn.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export { LeftColumn, RightColumn };
 
