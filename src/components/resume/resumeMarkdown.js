@@ -21,7 +21,6 @@ const markdown = `\
 ${resumeData.intro}
 
 ## Contact
-- Phone: ${resumeData.contact.phone}
 - Email: ${resumeData.contact.email}
 - Github: ${resumeData.contact.github}
 

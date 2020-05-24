@@ -16,13 +16,12 @@ const resumeData = {
   ],
   contact: {
     email: 'anil@terminal.space',
-    phone: '425-748-4484',
     github: 'AnilRedshift',
   },
   education: {
     name: 'University of Illinois',
     degree: 'Bachelor of Science in Computer Science',
-    start: '2017',
+    start: '2007',
     end: '2010',
   },
   skills: [
@@ -40,6 +39,16 @@ const resumeData = {
     },
   ],
   jobs: [
+    {
+      company: 'Facebook',
+      role: 'Software Engineer',
+      start: 'September 2018',
+      highlights: [
+        'Developed a platform for creating easy A/B experiments to improve FB ads',
+        'Decreased the initial JS filesize of the experiment page by 80%',
+        'Worked on FB Lightspeed effort to improve Mesenger performance by 50%',
+      ],
+    },
     {
       company: 'Avvo',
       role: 'Team Lead',

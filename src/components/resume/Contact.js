@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 import emailLogo from '../../images/email.png';
-import phoneLogo from '../../images/phone.png';
 import githubLogo from '../../images/github.png';
 
 const Container = styled.div`
@@ -34,11 +33,10 @@ const ContactRow = ({ text, logo, type }) => (
   </Row>
 );
 
-const Contact = ({ email, phone, github }) => (
+const Contact = ({ email, github }) => (
   <Container>
     <Header align="right">Contact</Header>
     <ContactRow text={email} logo={emailLogo} type="email" />
-    <ContactRow text={phone} logo={phoneLogo} type="phone" />
     <ContactRow text={github} logo={githubLogo} type="github" />
   </Container>
 );
