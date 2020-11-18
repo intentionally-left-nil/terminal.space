@@ -30,13 +30,7 @@ const CondensedContainer = styled.div`
 `;
 
 const colors = ['#61BCF4', '#FF7370', '#FF97C7', '#C598F5', '#6F79F6'];
-const condensed_colors = [
-  '#61BCF4',
-  '#6F79F6',
-  '#FF7370',
-  '#FF97C7',
-  '#C598F5',
-];
+const condensedColors = ['#61BCF4', '#6F79F6', '#FF7370', '#FF97C7', '#C598F5'];
 
 const Row = styled.div`
   color: ${(props) => props.color};
@@ -68,10 +62,12 @@ const createRows = (data) => {
 
 const CondensedRowWrapper = ({ condensed }) => {
   const rows = condensed.map((text, i) => {
-    const color = condensed_colors[i];
+    const color = condensedColors[i];
     return (
       <CondensedItem key={text + color} color={color}>
-        {text} {i === condensed.length ? '' : ' '}
+        {text}
+        {' '}
+        {i === condensed.length ? '' : ' '}
       </CondensedItem>
     );
   });

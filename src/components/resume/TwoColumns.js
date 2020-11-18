@@ -15,11 +15,11 @@ const TwoColumns = styled.div`
 `;
 
 const gap = 40;
-const medium_width_gap = 20;
+const mediumWidthGap = 20;
 const width = `calc(50% - ${gap}px)`;
 
-const medium_left_width = `calc(40% - ${medium_width_gap}px)`;
-const medium_right_width = `calc(60% - ${medium_width_gap}px)`;
+const mediumLeftWidth = `calc(40% - ${mediumWidthGap}px)`;
+const mediumRightWidth = `calc(60% - ${mediumWidthGap}px)`;
 
 const LeftColumnStyled = styled.div`
   order: 1;
@@ -28,8 +28,8 @@ const LeftColumnStyled = styled.div`
   display: flex;
   justify-content: flex-end;
   ${medium(`
-  width: ${medium_left_width};
-  padding-right: ${medium_width_gap}px;
+  width: ${mediumLeftWidth};
+  padding-right: ${mediumWidthGap}px;
   `)}
   ${small(`
   width: inherit;
@@ -45,8 +45,8 @@ const RightColumnStyled = styled.div`
   display: flex;
   justify-content: flex-start;
   ${medium(`
-  width: ${medium_right_width};
-  padding-left: ${medium_width_gap}px;
+  width: ${mediumRightWidth};
+  padding-left: ${mediumWidthGap}px;
   `)}
 `;
 
