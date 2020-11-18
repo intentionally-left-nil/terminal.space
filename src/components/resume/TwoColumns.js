@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { medium } from './media';
+import { small, medium } from './media';
 
 const TwoColumns = styled.div`
   display: flex;
@@ -8,6 +8,9 @@ const TwoColumns = styled.div`
   margin: 20px;
   ${medium(`
   margin: 10px;
+  `)}
+  ${small(`
+  flex-direction: column;
   `)}
 `;
 
@@ -28,6 +31,11 @@ const LeftColumnStyled = styled.div`
   width: ${medium_left_width};
   padding-right: ${medium_width_gap}px;
   `)}
+  ${small(`
+  width: inherit;
+  padding-right: inherit;
+  padding-left: 20px;
+  `)}
 `;
 
 const RightColumnStyled = styled.div`
@@ -44,6 +52,10 @@ const RightColumnStyled = styled.div`
 
 const ColumnContent = styled.div`
   max-width: 332px;
+  ${small(`
+  max-width: inherit;
+  width: 100%;
+  `)}
 `;
 
 const LeftColumn = ({ children }) => (

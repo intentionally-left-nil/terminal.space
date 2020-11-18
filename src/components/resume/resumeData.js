@@ -9,6 +9,7 @@ const resumeData = {
     ['software', 'engineer'],
     ['EMT'],
   ],
+  introHeroCondensed: ["hello, i'm", 'anil kulkarni'],
   contact: {
     email: 'anil@terminal.space',
     github: 'AnilRedshift',

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
+import { small } from './media';
 
 const Name = styled.span`
   display: inline;
@@ -9,6 +10,9 @@ const Name = styled.span`
 
 const Body = styled.div`
   text-align: right;
+  ${small(`
+  text-align: left;
+  `)}
 `;
 
 const Wrapper = styled.div`

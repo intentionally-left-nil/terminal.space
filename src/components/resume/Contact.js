@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 import emailLogo from '../../images/email.png';
 import githubLogo from '../../images/github.png';
+import { small } from './media';
 
 const Container = styled.div`
   margin-bottom: 20px;
@@ -11,6 +12,9 @@ const Container = styled.div`
 const Text = styled.div`
   padding-right: 2px;
   text-align: right;
+  ${small(`
+  text-align: left;
+  `)}
 `;
 
 const Row = styled.div`
@@ -18,6 +22,9 @@ const Row = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   margin-bottom: 7px;
+  ${small(`
+  justify-content: flex-start;
+  `)}
 `;
 
 const Icon = styled.img`

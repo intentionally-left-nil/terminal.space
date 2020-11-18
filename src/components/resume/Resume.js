@@ -10,7 +10,7 @@ import Skills from './Skills';
 import resumeData from './resumeData';
 
 const Container = styled.div`
-  background-color: #FFF;
+  background-color: #fff;
   overflow-y: auto;
   height: 100vh;
 `;
@@ -19,9 +19,14 @@ const Resume = () => (
   <Container>
     <TwoColumns>
       <LeftColumn>
-        <Hero rows={resumeData.introHero} />
-        <Contact {...resumeData.contact} />
-        <Education {...resumeData.education} />
+        <Hero
+          rows={resumeData.introHero}
+          condensed={resumeData.introHeroCondensed}
+        />
+        <div>
+          <Contact {...resumeData.contact} />
+          <Education {...resumeData.education} />
+        </div>
       </LeftColumn>
       <RightColumn>
         <Skills skills={resumeData.skills} />

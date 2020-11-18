@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { medium } from './media';
+import { small, medium } from './media';
 
 const Header = styled.h2`
   color: #61bcf4;
@@ -10,6 +10,9 @@ const Header = styled.h2`
   margin-bottom: 10px;
   ${medium(`
   font-size: 14px;
+  `)}
+  ${small(`
+  text-align: left;
   `)}
 `;
 
