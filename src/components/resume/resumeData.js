@@ -1,14 +1,9 @@
 const resumeData = {
-  intro: "Hello there, I'm Anil Kulkarni, and I'm a software engineer, EMT, teacher, and leader",
+  intro:
+    "Hello there, I'm Anil Kulkarni, and I'm a software engineer, EMT, teacher, and leader",
   name: 'Anil Kulkarni',
   introHero: [
-    [
-      'hello',
-      'there',
-      "i'm anil",
-      'kulkarni',
-      "and i'm a",
-    ],
+    ['hello', 'there', "i'm anil", 'kulkarni', "and i'm a"],
     ['leader'],
     ['teacher'],
     ['software', 'engineer'],
@@ -44,9 +39,10 @@ const resumeData = {
       role: 'Software Engineer',
       start: 'September 2018',
       highlights: [
-        'Developed a platform for creating easy A/B experiments to improve FB ads',
-        'Decreased the initial JS filesize of the experiment page by 80%',
-        'Worked on FB Lightspeed effort to improve Mesenger performance by 50%',
+        'Improved Messenger iOS performance by over 10% through hot-path optimizations',
+        'Led a federation program to enable 7 product teams to maintain performance goals',
+        'Created a platform for advertisers to create custom A/B tests on their ads with one button',
+        'Mentored two peers and two interns to job promotions and offers',
       ],
     },
     {
