@@ -1,14 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import { medium } from './media';
 
 const TwoColumns = styled.div`
   display: flex;
   width: 100%;
   margin: 20px;
+  ${medium(`
+  margin: 10px;
+  `)}
 `;
 
 const gap = 40;
+const medium_width_gap = 20;
 const width = `calc(50% - ${gap}px)`;
+
+const medium_left_width = `calc(40% - ${medium_width_gap}px)`;
+const medium_right_width = `calc(60% - ${medium_width_gap}px)`;
 
 const LeftColumnStyled = styled.div`
   order: 1;
@@ -16,6 +24,10 @@ const LeftColumnStyled = styled.div`
   padding-right: ${gap}px;
   display: flex;
   justify-content: flex-end;
+  ${medium(`
+  width: ${medium_left_width};
+  padding-right: ${medium_width_gap}px;
+  `)}
 `;
 
 const RightColumnStyled = styled.div`
@@ -24,6 +36,10 @@ const RightColumnStyled = styled.div`
   padding-left: ${gap}px;
   display: flex;
   justify-content: flex-start;
+  ${medium(`
+  width: ${medium_right_width};
+  padding-left: ${medium_width_gap}px;
+  `)}
 `;
 
 const ColumnContent = styled.div`

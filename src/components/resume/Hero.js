@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { medium } from './media';
 
 const Container = styled.div`
   font-family: 'League Spartan';
@@ -7,6 +8,12 @@ const Container = styled.div`
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 20px;
+  ${medium(`
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  `)}
 `;
 
 const colors = ['#61BCF4', '#FF7370', '#FF97C7', '#C598F5', '#6F79F6'];
