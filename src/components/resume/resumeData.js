@@ -21,7 +21,7 @@ const resumeData = {
     end: '2010',
   },
   skills: [
-    ['Elixir', 'JS', 'C', 'C++', 'Python', 'Ruby'],
+    ['Objective-C', 'Elixir', 'JS', 'C', 'C++', 'Python'],
     ['Empathy', 'Teaching', 'Patience'],
   ],
   communities: [
