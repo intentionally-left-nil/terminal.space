@@ -4,15 +4,16 @@ const resumeData = {
   name: 'Anil Kulkarni',
   introHero: [
     ['hello', 'there', "i'm anil", 'kulkarni', "and i'm a"],
+    ['software', 'engineer'],
     ['leader'],
     ['teacher'],
-    ['software', 'engineer'],
     ['EMT'],
   ],
   introHeroCondensed: ["hello, i'm", 'anil kulkarni'],
   contact: {
     email: 'anil@terminal.space',
     github: 'AnilRedshift',
+    phone: 'U2FsdGVkX1/ITRvMRzOOexdSdwFbaEGBuSJdvZUsJuw=',
   },
   education: {
     name: 'University of Illinois',
@@ -21,17 +22,21 @@ const resumeData = {
     end: '2010',
   },
   skills: [
-    ['Objective-C', 'Elixir', 'JS', 'C', 'C++', 'Python'],
+    ['Objective-C', 'JS', 'Elixir', 'C', 'C++', 'Python'],
     ['Empathy', 'Teaching', 'Patience'],
   ],
   communities: [
     {
-      name: 'Cogrammers',
-      role: 'President & Founder',
-    },
-    {
       name: 'King County Search & Rescue',
       role: 'Team Leader & Emergency Medical Technician',
+    },
+    {
+      name: 'King County Public Helth',
+      role: 'COVID testing, vaccination, community events',
+    },
+    {
+      name: 'Junior Tech mentorship',
+      role: 'Weekly tech interview practice, career guidance',
     },
   ],
   jobs: [
@@ -40,8 +45,8 @@ const resumeData = {
       role: 'Software Engineer',
       start: 'September 2018',
       highlights: [
-        'Improved Messenger iOS performance by over 10% through hot-path optimizations',
-        'Led a federation program to enable 7 product teams to maintain performance goals',
+        'Improved Messenger iOS startup performance by over 10% through hot-path optimizations',
+        'Led a federation program to enable 10 product teams to maintain performance goals',
         'Created a platform for advertisers to create custom A/B tests on their ads with one button',
         'Mentored two peers and two interns to job promotions and offers',
       ],
@@ -50,6 +55,7 @@ const resumeData = {
       company: 'Avvo',
       role: 'Team Lead',
       start: 'November, 2017',
+      end: 'August 2018',
       highlights: [
         "Work prioritization, sprint executions, 1:1's and cross-team collaboration",
         'Increased sprint ticket completion by 30%',
