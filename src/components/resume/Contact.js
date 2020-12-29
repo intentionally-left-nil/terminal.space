@@ -24,8 +24,10 @@ const Row = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   margin-bottom: 7px;
+  gap: 5px;
   ${small(`
-  justify-content: flex-start;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
   `)}
 `;
 
@@ -35,12 +37,30 @@ const Icon = styled.img`
   margin-top: -2px;
 `;
 
-const ContactRow = ({ text, logo, type }) => (
-  <Row>
-    <Text>{text}</Text>
-    <Icon src={logo} alt={`${type} logo`} />
-  </Row>
-);
+const Anchor = styled.a`
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #61bcf4;
+  }
+`;
+
+const ContactRow = ({ text, logo, type }) => {
+  const row = (
+    <Row>
+      <Text>{text}</Text>
+      <Icon src={logo} alt={`${type} logo`} />
+    </Row>
+  );
+  switch (type) {
+    case 'github':
+      return <Anchor href={`https://github.com/${text}`}>{row}</Anchor>;
+    case 'email':
+      return <Anchor href={`mailto:${text}`}>{row}</Anchor>;
+    default:
+      return row;
+  }
+};
 
 const Contact = ({ email, phone, github }) => (
   <Container>

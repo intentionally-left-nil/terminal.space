@@ -35,7 +35,7 @@ const resumeData = {
       role: 'COVID testing, vaccination, community events',
     },
     {
-      name: 'Junior Tech mentorship',
+      name: 'Junior Tech Mentorship',
       role: 'Weekly tech interview practice, career guidance',
     },
   ],
