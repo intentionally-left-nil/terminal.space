@@ -80,11 +80,9 @@ const resumeData = {
       start: 'October 2014',
       end: 'February 2017',
       highlights: [
-        'Technical lead and owner of architecture decisions',
+        'Technical lead and owner of architecture decisions, and made major decisions about the tech stack',
         "Implemented Textio's initial backend and refactored frontend to use React",
         'Designed and led five-month project to create best-in-class text editor',
-        'Spearheaded major technology decisions, such as using ES2015, Docker, AWS, and CircleCI',
-        'Mentored four developers, leading to two promotions',
       ],
     },
     {
