@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'GlacialIndifference';
   font-style: normal;
-  src: url(./fonts/GlacialIndifference-Regular.woff) format("woff");
+  src: url(./fonts/GlacialIndifference-Regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'GlacialIndifference';
   font-style: normal;
   font-weight: bold;
-  src: url(./fonts/GlacialIndifference-Bold.woff) format("woff");
+  src: url(./fonts/GlacialIndifference-Bold.woff) format('woff');
 }
 
 @font-face {
   font-family: 'GlacialIndifference';
   font-style: italic;
-  src: url(./fonts/GlacialIndifference-Italic.woff) format("woff");
+  src: url(./fonts/GlacialIndifference-Italic.woff) format('woff');
 }
 
 @font-face {
@@ -28,9 +28,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: GlacialIndifference;
-  overflow-y: hidden;
+  overflow-y: clip;
+}
+@media print {
+  @page {
+    size: letter;
+    margin: 0px;
+  }
+  body {
+    height: 11in;
+    width: 8.5in;
+    margin: 0px;
+  }
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }

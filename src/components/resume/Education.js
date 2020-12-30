@@ -17,6 +17,9 @@ const Body = styled.div`
 
 const Wrapper = styled.div`
   margin-top: 30px;
+  @media print {
+    margin-top: 0vh;
+  }
 `;
 
 const Education = ({ name, degree }) => (

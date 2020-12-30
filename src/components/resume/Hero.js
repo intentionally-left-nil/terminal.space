@@ -8,6 +8,11 @@ const Container = styled.div`
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 20px;
+  @media print {
+    font-size: 4.8vh;
+    line-height: 1.417;
+    margin-bottom: 2vh;
+  }
   ${medium(`
   font-size: 48px;
   font-weight: 400;

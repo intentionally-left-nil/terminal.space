@@ -8,6 +8,11 @@ const Header = styled.h2`
   text-transform: uppercase;
   letter-spacing: 0px;
   margin-bottom: 10px;
+  @media print {
+    font-size: 2vh;
+    margin-bottom: 0.2vh;
+    margin-top: 0.3vh;
+  }
   ${medium(`
   font-size: 14px;
   `)}

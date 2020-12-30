@@ -4,11 +4,14 @@ import Header from './Header';
 import emailLogo from '../../images/email.png';
 import phoneLogo from '../../images/phone.png';
 import githubLogo from '../../images/github.png';
-import { small } from './media';
+import { small, PRINT_FONT_SIZE } from './media';
 import { uncrypt } from './crypter';
 
 const Container = styled.div`
   margin-bottom: 20px;
+  @media print {
+    margin-bottom: 2vh;
+  }
 `;
 
 const Text = styled.div`
@@ -35,6 +38,11 @@ const Icon = styled.img`
   width: 24px;
   height: 24px;
   margin-top: -2px;
+  @media print {
+    width: ${PRINT_FONT_SIZE};
+    height: ${PRINT_FONT_SIZE};
+    margin-top: 0vh;
+  }
 `;
 
 const Anchor = styled.a`

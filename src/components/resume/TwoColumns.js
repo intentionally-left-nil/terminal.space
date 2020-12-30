@@ -4,10 +4,10 @@ import { small, medium } from './media';
 
 const TwoColumns = styled.div`
   display: flex;
-  width: 100%;
-  margin: 20px;
+  width: calc(100% - 40px);
+  padding: 20px;
   ${medium(`
-  margin: 10px;
+  padding: 10px;
   `)}
   ${small(`
   flex-direction: column;
@@ -27,6 +27,10 @@ const LeftColumnStyled = styled.div`
   padding-right: ${gap}px;
   display: flex;
   justify-content: flex-end;
+  @media print {
+    width: 40vw;
+    padding-right: 3vw;
+  }
   ${medium(`
   width: ${mediumLeftWidth};
   padding-right: ${mediumWidthGap}px;
@@ -44,6 +48,10 @@ const RightColumnStyled = styled.div`
   padding-left: ${gap}px;
   display: flex;
   justify-content: flex-start;
+  @media print {
+    width: inherit;
+    padding-left: 3vw;
+  }
   ${medium(`
   width: ${mediumRightWidth};
   padding-left: ${mediumWidthGap}px;
@@ -56,6 +64,9 @@ const ColumnContent = styled.div`
   max-width: inherit;
   width: 100%;
   `)}
+  @media print {
+    max-width: inherit;
+  }
 `;
 
 const LeftColumn = ({ children }) => (
