@@ -31,7 +31,7 @@ const resumeData = {
       role: 'Team Leader & Emergency Medical Technician',
     },
     {
-      name: 'King County Public Helth',
+      name: 'King County Public Health',
       role: 'COVID testing, vaccination, community events',
     },
     {
